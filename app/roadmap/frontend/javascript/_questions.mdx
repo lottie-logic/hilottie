@@ -1,0 +1,202 @@
+        <details>
+                    <summary>**What is JavaScript?**</summary>
+
+JavaScript is a high-level, interpreted programming language primarily used for building interactive and dynamic web pages. It enables client-side scripting to create responsive user interfaces and is commonly used alongside HTML and CSS in web development.
+
+        </details>
+
+        <details>
+                    <summary>**What is the purpose of JavaScript in web development?**</summary>
+
+JavaScript enhances web development by allowing developers to create dynamic and interactive content. It can manipulate the Document Object Model (DOM), handle user input, communicate with servers (Ajax), and perform various tasks to improve the user experience.
+
+        </details>
+
+        <details>
+                    <summary>**Explain the difference between `let`, `const`, and `var` in JavaScript.**</summary>
+
+`let`, `const`, and `var` are used to declare variables in JavaScript. `let` and `const` were introduced in ECMAScript 6, providing block-scoped and constant variables, respectively. `var` is function-scoped and has been traditionally used for variable declaration.
+
+        </details>
+
+        <details>
+                    <summary>**What is the significance of closures in JavaScript?**</summary>
+
+Closures in JavaScript allow functions to retain access to variables from their containing scope, even after the scope has finished executing. This concept is crucial for creating private variables, managing state, and implementing various design patterns.
+
+        </details>
+
+        <details>
+                    <summary>**How does JavaScript handle asynchronous operations?**</summary>
+
+JavaScript handles asynchronous operations using callbacks, promises, and async/await. Callbacks are functions passed as arguments, promises provide a more structured approach, and async/await simplifies asynchronous code by allowing it to resemble synchronous code.
+
+        </details>
+
+        <details>
+                    <summary>**Explain the concept of the DOM in JavaScript.**</summary>
+
+The DOM, or Document Object Model, is a programming interface provided by browsers that allows JavaScript to manipulate the structure, style, and content of HTML documents. It represents the document as a tree of objects, making it possible to interact with and modify web pages dynamically.
+
+        </details>
+
+        <details>
+                    <summary>**What is event delegation in JavaScript?**</summary>
+
+Event delegation is a technique in JavaScript where a single event listener is attached to a common ancestor for a group of elements. This allows the handling of events for multiple elements with a single listener, improving performance and reducing the need for excessive event handlers.
+
+        </details>
+
+        <details>
+                    <summary>**How do you handle errors in JavaScript?**</summary>
+
+Errors in JavaScript can be handled using try...catch blocks. The try block contains the code that might throw an exception, and the catch block handles the exception, allowing developers to gracefully manage errors and prevent them from crashing the entire application.
+
+        </details>
+
+        <details>
+                    <summary>**What is the purpose of the `this` keyword in JavaScript?**</summary>
+
+The `this` keyword in JavaScript refers to the current execution context and is determined by how a function is called. In the global scope, `this` refers to the global object. In a function, it can refer to the object the function was called on or, if used in an arrow function, it retains the value of `this` from the surrounding context.
+
+        </details>
+
+        <details>
+                    <summary>**What is the role of the `localStorage` and `sessionStorage` in JavaScript?**</summary>
+
+`localStorage` and `sessionStorage` are web storage options in JavaScript for storing key-value pairs locally on the client side. `localStorage` persists data even after the browser is closed, while `sessionStorage` only persists data for the duration of a session.
+
+        </details>
+
+        <details>
+                    <summary>**What is the purpose of the JavaScript `fetch` API?**</summary>
+
+The `fetch` API in JavaScript is used for making network requests (e.g., fetching data from a server). It provides a more flexible and powerful alternative to the traditional XMLHttpRequest, supporting promises and allowing for easier handling of response data.
+
+        </details>
+
+        <details>
+                    <summary>**How does JavaScript implement inheritance?**</summary>
+
+JavaScript uses prototype-based inheritance, where objects can inherit properties and methods from other objects. Each object has a prototype object, and when a property or method is not found on the object itself, JavaScript looks up the prototype chain to find it in the prototype object.
+
+        </details>
+
+        <details>
+                    <summary>**What is the purpose of the JavaScript `map` function?**</summary>
+
+The `map` function in JavaScript is used to transform elements in an array. It applies a provided function to each element in the array, creating a new array with the results. This higher-order function is commonly used for data manipulation and transformation.
+
+        </details>
+
+        <details>
+                    <summary>**How can you create and handle events in JavaScript?**</summary>
+
+Events in JavaScript can be created using the `addEventListener` method. Event handling involves specifying a function to be executed when a specific event occurs, such as a user click or keypress. This allows developers to respond to user interactions and create dynamic web applications.
+
+        </details>
+
+        <details>
+                    <summary>**What is the purpose of the JavaScript `setTimeout` function?**</summary>
+
+The `setTimeout` function in JavaScript is used to delay the execution of a function or a piece of code for a specified amount of time. It is often used to create time-based animations, schedule tasks, or introduce delays in asynchronous operations.
+
+        </details>
+
+
+
+
+<details>
+<summary>**What is the event loop in JavaScript, and how does it work?**</summary>
+
+The event loop is the core of JavaScript's asynchronous programming model. It manages the execution of code by continuously checking the call stack, callback queue, and message queue. The call stack processes synchronous tasks, while asynchronous tasks are queued in the callback queue. The event loop ensures that the call stack is empty before processing tasks from the callback queue, allowing for non-blocking, asynchronous behavior.
+
+</details>
+
+<details>
+<summary>**Can you explain the differences between `null` and `undefined` in JavaScript?**</summary>
+
+`null` is a deliberate assignment, indicating the absence of a value or a variable intentionally set to no value. `undefined` represents an uninitialized or undeclared variable. In practical terms, developers may set a variable to `null`, but `undefined` is typically a default value.
+
+</details>
+
+<details>
+<summary>**What is the Temporal Dead Zone in JavaScript?**</summary>
+
+The Temporal Dead Zone (TDZ) refers to the period between entering scope and the actual declaration of a variable using `let` or `const`. During this time, accessing the variable results in a `ReferenceError`. It prevents variables from being accessed before they are declared, promoting better code quality.
+
+</details>
+
+<details>
+<summary>**Can you describe the concept of memoization in JavaScript?**</summary>
+
+Memoization is a technique used to optimize functions by caching the results of expensive function calls and returning the cached result when the same inputs occur again. It improves performance by avoiding redundant computations.
+
+</details>
+
+<details>
+<summary>**What are generator functions in JavaScript, and how do they work?**</summary>
+
+Generator functions are special types of functions that can pause their execution using the `yield` keyword and later resume from where they left off. They are declared using function* syntax. Generators are iterators and are particularly useful for handling asynchronous operations and creating iterable sequences.
+
+</details>
+
+<details>
+<summary>**What is the purpose of the JavaScript Proxy object?**</summary>
+
+The `Proxy` object is used to create custom behaviors for fundamental operations on objects, such as property access, assignment, function invocation, etc. It allows developers to intercept and customize the behavior of these operations.
+
+</details>
+
+<details>
+<summary>**Explain the differences between the `apply`, `call`, and `bind` methods in JavaScript.**</summary>
+
+- `apply`: Invokes a function with a given `this` value and arguments provided as an array.
+- `call`: Invokes a function with a given `this` value and individual arguments.
+- `bind`: Returns a new function with the specified `this` value and initial arguments. It doesn't invoke the function immediately.
+
+</details>
+
+<details>
+<summary>**Can you discuss the event bubbling and capturing phases in JavaScript?**</summary>
+
+Event propagation in JavaScript involves two phases: capturing and bubbling. In the capturing phase, the event traverses from the root of the DOM hierarchy to the target element. In the bubbling phase, the event propagates back up from the target to the root. Event listeners can be attached to either phase to handle events during the propagation.
+
+</details>
+
+<details>
+<summary>**How does the JavaScript `async/await` syntax work under the hood?**</summary>
+
+`async/await` is built on top of Promises and the event loop. When an `async` function is invoked, it returns a Promise. The `await` keyword is used to pause the execution of the function until the Promise is resolved, allowing for cleaner asynchronous code that looks synchronous.
+
+</details>
+
+<details>
+<summary>**What is the concept of currying in JavaScript?**</summary>
+
+Currying is the process of converting a function that takes multiple arguments into a sequence of functions that each takes a single argument. It allows for partial application, where a function is applied to some of its arguments, returning a new function that takes the remaining arguments.
+
+</details>
+
+<details>
+<summary>**What is the JavaScript event-driven programming paradigm?**</summary>
+
+Event-driven programming in JavaScript is based on the concept of events and listeners. Components or objects emit events, and listeners (functions) respond to those events. This paradigm facilitates asynchronous communication and is commonly used in GUIs and web development.
+
+</details>
+
+<details>
+<summary>**Explain the differences between `var`, `let`, and `const` hoisting in JavaScript.**</summary>
+
+- `var`: Hoisted to the top of its scope and initialized with `undefined`. It has function scope.
+- `let`: Hoisted to the top of its block scope but not initialized. It is not accessible before the declaration.
+- `const`: Hoisted to the top of its block scope but not initialized. It is not accessible before the declaration, and its value cannot be reassigned.
+
+</details>
+
+<details>
+<summary>**Can you discuss the concept of prototypal inheritance in JavaScript?**</summary>
+
+Prototypal inheritance in JavaScript involves objects inheriting properties and methods from other objects through their prototype chain. Each object has a prototype object, and if a property or method is not found on the object itself, JavaScript looks up the prototype chain
+
+        </details>

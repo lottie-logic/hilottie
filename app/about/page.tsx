@@ -1,27 +1,16 @@
 "use client";
 
-import Image from "next/image";
+import React from "react";
 import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
-import CourseOptions from "./components/Courses";
-import { useContext } from "react";
-import { ThemeContext } from "./Providers";
-import { CourseContext } from "./contexts/CourseContext";
-import { usePathname } from "next/navigation";
 
-const useTheme = () => useContext(ThemeContext);
-export default function Home() {
-  const theme = useTheme();
-  console.log("ThemeContext", theme);
-
-  // const theme = useTheme();
-  // Your rendering logic for courseData
+export default function About() {
   return (
-    <div className="grid  grid-flow-col grid-cols-3 gap-4 bg-cream h-[80vh] w-[100vw] ">
-      <div className="col-span-1  bg-cream  overflow-x-scroll scrollbar-hide">
-        <div className="flex-1 min-w-full flex-col ">
-          {/* <CourseOptions onSelect={undefined} /> */}
+    // <div className="flex bg-red-400 h-screen justify-center items-center">
+    <div className="grid  grid-flow-col grid-cols-2 gap-4 bg-cream h-[80vh] w-[100vw] ">
+      <div className="col-span-1  bg-cream ">
+        <div className="flex-1 min-w-full flex-col">
           {/* <Tabs aria-label="Options">
-            <Tab key="photos" title="Photos"> 
+            <Tab key="photos" title="Photos">
               <Card className="flex-grow">
                 <CardBody>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -87,5 +76,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    // </div>
   );
 }
